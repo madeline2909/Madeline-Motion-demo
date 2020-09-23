@@ -4,11 +4,30 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "DDDED186-6FFB-42B7-B637-025FEAE0F6E0"
+		"uuidString": "FD96D569-171C-47A4-BB88-833D2252A76A"
 		}
 	],
 "creatorBuild": "32186",
 "files": {
+	"/deploy/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/index.html",
+		"oF": 0
+		},
+	"/deploy/js/scripts-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/deploy/js/scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/content/demo.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -59,7 +78,7 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
-		"oF": 2,
+		"oF": 3,
 		"sC": 3,
 		"tS": 0
 		},
@@ -215,7 +234,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/deploy/css/styles.css",
-		"oF": 2,
+		"oF": 3,
 		"oS": 0,
 		"sct": 0
 		},
@@ -249,7 +268,7 @@
 "projectAttributes": {
 	"creationDate": 622571887.75415099,
 	"displayValue": "Madeline-Motion-demo",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets-ucla",
 	"iconImageWasSetByUser": 0
 	},
