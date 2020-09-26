@@ -6,34 +6,46 @@ import {
 //TweenMax.to(".red-box",2,{x: 500, borderRadius: "50px" });
 //TweenLite.to(".red-box",2,{x: 500, borderRadius: "50px" });
 
-var redSpeed = 2;
-var blueSpeed = 1.5;
+var catHorizontalSpeed = 1.5;
+var loadingPopUpSpeed = 0.5;
+var loadingRotateSpeed = 2.5;
+var runningTextSpeed = 5;
 
+gsap.set("#loading",{
+    transformOrigin: "center center"
+})
+gsap.set("#cat",{
+    transformOrigin: "center center"
+})
+gsap.set("#running-text",{
+    alpha:0
+})
 
 // gsap call / what do you want to animate / how long should it animate / what should change?
-gsap.to(".red-box", {
-    duration: redSpeed,
-    x: 500,
-    borderRadius: "50px"
+gsap.from("#cat", {
+    duration: catHorizontalSpeed,
+    scale: 2,
+    x: -600
 });
 
-gsap.to(".red-box", {
-    duration: redSpeed,
-    y: 500,
-    borderRadius: "100px",
-    delay: redSpeed
+gsap.from("#loading", {
+    duration: loadingPopUpSpeed,
+    alpha:0,
+    scale: 0.5,
+    delay: catHorizontalSpeed
 });
 
-gsap.from(".blue-box", {
-    duration: blueSpeed,
-    x: 300,
-    y: 300,
-    borderRadius: "50px"
+gsap.to("#cat-animation", {
+    duration: loadingRotateSpeed,
+    rotate: 360,
+    repeat: 100,
+    delay: loadingRotateSpeed
 });
 
-gsap.to(".blue-box", {
-    duration: blueSpeed,
-    y: 100,
-    borderRadius: "200px",
-    delay: blueSpeed
+gsap.to("#running-text", {
+    duration: runningTextSpeed,
+    y:-1000,
+    alpha:1,
+    repeat: 100,
+    delay: loadingRotateSpeed
 });
