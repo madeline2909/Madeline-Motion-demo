@@ -1,4 +1,17 @@
-import * as Demo from './demo.js';
+import {gsap} from "gsap";
 
-//keeping codekit quiet and not complaining
-console.log(Demo);
+import {
+    loadingIconRotate
+} from './loadingRotate.js';
+
+import {
+    textRunning
+} from './textRunning.js';
+
+var mainTL = gsap.timeline();
+
+mainTL
+.add(loadingIconRotate(), "loadingAnimation")
+.add(textRunning(), "loadingAnimation")
+
+        
