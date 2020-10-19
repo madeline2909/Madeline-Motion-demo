@@ -2,33 +2,11 @@
    Cat Demo
 ============= */
 section{
-    position: relative;
-    overflow: hidden;
-    background-color: #F0DBDA;
-    #cat-animation-container{
-        width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
         height: 100vh;
-        position: relative;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    // border: solid 1px red;
-    
-    #cat-animation{
-        // border: solid 1px red;
-        overflow: visible;
-    }
-}
-#running-text{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: 0;
-    h1{
-        font-family: 'Space Mono', monospace;
-        font-size: rem-calc(90);
-        color: #59BEB0;
+        width: 50vw;
     }
 }
