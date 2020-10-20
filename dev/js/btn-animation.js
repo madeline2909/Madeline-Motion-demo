@@ -3,7 +3,7 @@ import {
 } from "gsap";
 
 
-var btnShadeSpeed = 0.75;
+var btnShadeSpeed = 0.5;
 var catSpeed = 0.5;
 
 gsap.set("#shade", {
@@ -27,7 +27,7 @@ gsap.set("#cat-body", {
 })
 
 // gsap call / what do you want to animate / how long should it animate / what should change?
-export const catBtnTL = gsap.timeline({paused:false});
+export const catBtnTL = gsap.timeline({paused:true});
 catBtnTL.from("#shade", {
     duration: btnShadeSpeed,
     x: -1200
@@ -39,22 +39,22 @@ catBtnTL.from("#shade", {
 .to(".btn-text", {
     y:-8,
     fill: "#EF87A3",
-    stagger: .05
+    stagger: .03
 }, "btn animation")
 .to("#cat-head", {
     duration: catSpeed,
     y:22
-}, "-=.5", "cat animation")
+}, "btn animation")
 .to("#cat-tail", {
     duration: catSpeed,
     x:-60
-}, "-=.5", "cat animation")
+}, "btn animation")
 .to("#cat-body", {
     duration: catSpeed,
     y:0
-}, "-=.5", "cat animation")
+}, "btn animation")
 ;
 
-export function catBtnAnimation() {
-    return catBtnTL;
-}
+// export function catBtnAnimation() {
+//     return catBtnTL;
+// }
